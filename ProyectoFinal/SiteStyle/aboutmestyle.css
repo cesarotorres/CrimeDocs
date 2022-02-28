@@ -50,5 +50,6 @@ p{font-family: Verdana, Geneva, Tahoma, sans-serif;}
     margin-left: auto;
     margin-right: auto;
     width: 50%;}
-  .About-Us {align-items: center;}
+  .About-Us {align-items: center;
+border-radius: 50%}
   
