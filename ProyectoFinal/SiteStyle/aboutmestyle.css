@@ -49,7 +49,6 @@ p{font-family: Verdana, Geneva, Tahoma, sans-serif;}
   #cesartorres{ display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;}
-  .About-Us {align-items: center;
-border-radius: 50%}
+    width: 50%; border-radius: 50%;}
+  .About-Us {align-items: center;}
   
