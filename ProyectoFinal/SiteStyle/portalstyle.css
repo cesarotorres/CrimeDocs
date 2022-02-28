@@ -1,0 +1,13 @@
+.logo{display: inline; font-family: "Serif", Georgia, 'Times New Roman', Times, serif;
+}
+body{background-color: darkred; color: white;}
+#LogoPic{border-radius: 50%;}
+nav{display: inline;
+padding: 25px;
+}
+hr{color: black;}
+.navbar-custom{background-color: darkred}
+#Bundy_Pic{width: 250px; height: 250px;}
+h1{text-align: center;}
+#Ramirez_Pic{width: 250px; height: 250px;}
+#manson-pic {width: 250px; height: 250px;}

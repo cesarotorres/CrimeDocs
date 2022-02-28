@@ -1,0 +1,16 @@
+.logo{display: inline; font-family: "Serif", Georgia, 'Times New Roman', Times, serif;
+}
+body{background-color: darkred; color: white;}
+#LogoPic{border-radius: 50%;}
+nav{display: inline;
+padding: 25px;
+}
+hr{color: black;}
+#AboutUs{padding: 25px;}
+p{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+#nightstalker{display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;}
+.navbar-custom{background-color: darkred}
