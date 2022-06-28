@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, intial-scale=1">
   <title>CrimeDocs</title>
- 
-               
+  <script type="text/javascript" src="/SiteJs/script.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="SiteStyle/aboutmestyle.css">
+  <link rel="stylesheet" href="/webDesign/MyProjects/Proyecto Final/SiteStyle/aboutmestyle.css">
  </head>
 
  <body>
-   <script> function validateRequired(){
+     <script>
+     function validateRequired(){
       var name = document.myForm.name.value;  
       var email= document.myForm.email.value; 
         var comment= document.myForm.comment.value;
@@ -65,7 +65,7 @@
    return false;
     }
    }
-   </script>                      
+        </script>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom"> 
         <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="SiteImage/Logo-CD.png"></a> 
@@ -79,10 +79,10 @@
     
                 <li class="nav-item active"> 
     
-                    <a class="nav-link" href="index.html">Home<span class="sr-only"> (Current)</span></a> 
+                    <a class="nav-link" href="/webDesign/MyProjects/Proyecto Final/index.html">Home<span class="sr-only"> (Current)</span></a> 
     
                 </li> 
-    
+              
                 <li class="nav-item"> 
                     <li class="nav-item dropdown"> 
 
@@ -90,14 +90,14 @@
 
                			<div class="dropdown-menu" aria-labelledby="navbarDropdown"> 
 
-                            <a class="dropdown-item" href="profiles.html#TedBundy">Ted Bundy</a>
+                            <a class="dropdown-item" href="/webDesign/MyProjects/Proyecto Final/profiles.html#TedBundy">Ted Bundy</a>
                             <div class="dropdown-divider"></div>
 
-                            <a class="dropdown-item" href="profiles.html#RichardRamirez">Richard Ramirez</a> 
+                            <a class="dropdown-item" href="/webDesign/MyProjects/Proyecto Final/profiles.html#RichardRamirez">Richard Ramirez</a> 
 
                            <div class="dropdown-divider"></div> 
 
-                            <a class="dropdown-item" href="profiles.html#CharlesManson">Charles Manson</a> 
+                            <a class="dropdown-item" href="/webDesign/MyProjects/Proyecto Final/profiles.html#CharlesManson">Charles Manson</a> 
 
                 		</div> 
 
@@ -106,10 +106,10 @@
     
                 <li class="nav-item"> 
     
-                <a class="nav-link" href="aboutme.html" target="_blank">About Us</a> 
+                <a class="nav-link" href="/webDesign/MyProjects/Proyecto Final/aboutme.html" target="_blank">About Us</a> 
                 
                </li> 
-                
+            </ul>
                 
                     <form class="form-inline my-2 my-lg-0"> 
 
@@ -119,7 +119,7 @@
             
                         <button class="btn btn-primary my-2 my-sm-0”  
             
-                          type="submit">Search</button> 
+                          type= "submit">Search</button> 
       </form>
     </div>
 </nav>
@@ -129,7 +129,7 @@
     
 <h1>About Us</h1>
 <figure>
-    <img id="cesartorres" src="SiteImage/DSC_0016.JPG"></img>
+    <img id="cesartorres" src="/webDesign/MyProjects/Proyecto Final/SiteImage/DSC_0016.JPG"></figure></img>
 </figure>
 
 <p id="About_Me">     The author and designer of this page is Cesar O. Torres Rodriguez, a 20 year old college student born in Lehigh County, Pennsylvania who has always had an interest in forensic science and crime documentaries. He created this website based on the well-known Netflix series Mindhunter. Cesar is a jack of all trades, he has interests in music, photography, basketball and technology, hes not afraid to get his hands dirty if hes feeling creative enough to test his own limits and he is always willing to try out new things. When the challenge of making a website came, Cesar initially wanted to create a basketball database, however, the idea simply didn't shape itself in his head and another idea emerged, the concept for the Crime Docs website. Crime Docs is Cesar's biggest body of work so far and hes very proud of it, it was designed and shaped together by him and it will continue to be molded by his ideas. The next step for him and his project is including his programmer friends in the project and get as much reliable help as possible.
@@ -150,19 +150,27 @@
  <br>
  <h2>Feedback</h2>
  <article>
-    <form action="form.php" method="post">
+    <form onsubmit="return false" name="myForm">
         <fieldset>
         <legend>Contact Us</legend>
-        <p>All fields are required, as indicated by the red icons.</p>
-        <label for="name"> Name:</label>
-        <input type="text" name="name" id="name" required>
+        <p>All fields are required, as indicated by the white lettering.</p>
+        <label for="name"> Full Name:</label>
+        <input type="text" name="name" id="name">
+        <input type="submit" name="Validate" value="Validate" id="validate" onclick="validateName()">
+        <span id = "messagename" style="color:white"> </span>
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required>
+        <input type="text" name="email" id="email" >
+        <input type="submit" name="Validate" value="Validate" id="validate" onclick="validateEmail()">
+        <span id ="messageemail" style="color:white"> </span>
         <label for="comments">Message:</label>
-        <textarea cols="25" rows="5" name="comments" required></textarea>
+        <input type="text" id="comment">
+        <input type="submit" name="Validate" value="Validate" id="validate" onclick="validateComment()">
+        <span id ="messagecomment" style="color:white"> </span>
         <br>
         <br>
-        <input type="submit" name="Submit" value="Submit" id="submit">
+        <input type="submit" name="Submit" value="Submit" id="submit" onclick="validateRequired()">
+        
+        
         </fieldset>
       
       </form>
